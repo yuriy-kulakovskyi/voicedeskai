@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoiceDesk AI — AI Voice Agent for Customer Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Geist:wght@400;500;700&family=Geist+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <header class="header">
+          <nav class="header__nav" aria-label="Primary">
+            <a href="#" class="logo" aria-label="VoiceDesk AI home">
+              <span class="logo__symbol">
+                <svg
+                  class="logo__svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="1" y="6" width="2" height="6" rx="1" fill="white" />
+                  <rect x="5" y="3" width="2" height="12" rx="1" fill="white" />
+                  <rect x="9" y="0" width="2" height="18" rx="1" fill="white" />
+                  <rect
+                    x="13"
+                    y="4"
+                    width="2"
+                    height="10"
+                    rx="1"
+                    fill="white"
+                  />
+                  <rect x="17" y="7" width="2" height="4" rx="1" fill="white" />
+                </svg>
+              </span>
+              <span class="logo__text">VoiceDesk AI</span>
+            </a>
+
+            <ul class="header__links">
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="header__actions">
+              <a href="#contact" class="btn btn--gradient header__cta"
+                >Get Started</a
+              >
+              <button
+                class="icon-btn header__burger"
+                id="burgerBtn"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="mobileMenu"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 4H15M1 8H15M1 12H15"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </nav>
+
+          <div class="nav-mobile" id="mobileMenu">
+            <div class="nav-mobile__top">
+              <a href="#" class="logo" aria-label="VoiceDesk AI home">
+                <span class="logo__symbol">
+                  <svg
+                    class="logo__svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="1"
+                      y="6"
+                      width="2"
+                      height="6"
+                      rx="1"
+                      fill="white"
+                    />
+                    <rect
+                      x="5"
+                      y="3"
+                      width="2"
+                      height="12"
+                      rx="1"
+                      fill="white"
+                    />
+                    <rect
+                      x="9"
+                      y="0"
+                      width="2"
+                      height="18"
+                      rx="1"
+                      fill="white"
+                    />
+                    <rect
+                      x="13"
+                      y="4"
+                      width="2"
+                      height="10"
+                      rx="1"
+                      fill="white"
+                    />
+                    <rect
+                      x="17"
+                      y="7"
+                      width="2"
+                      height="4"
+                      rx="1"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+                <span class="logo__text">VoiceDesk AI</span>
+              </a>
+              <button
+                class="icon-btn nav-mobile__close"
+                id="closeBtn"
+                aria-label="Close menu"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L15 15M15 1L1 15"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <ul class="nav-mobile__links">
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn btn--gradient nav-mobile__cta"
+              >Get Started</a
+            >
+          </div>
+        </header>
+
+        <main>
+          <!-- HERO -->
+          <section class="hero">
+            <div class="hero__copy">
+              <h1>Your AI Voice Agent<br />for Customer Support</h1>
+              <p class="hero__subtitle">
+                Answer customer calls 24/7 with zero latency using your dynamic
+                knowledge base. VoiceDesk handles the first line instantly,
+                while seamlessly escalating complex problems to humans.
+              </p>
+            </div>
+
+            <div class="hero__actions">
+              <a href="#contact" class="btn btn--gradient">Get Started</a>
+              <a href="#how-it-works" class="btn btn--ghost"
+                >See How It Works</a
+              >
+            </div>
+
+            <div class="hero__visual">
+              <div class="hero__transcript">
+                <div class="hero__transcript-head">
+                  <div class="hero__transcript-who">
+                    <span class="avatar"></span>
+                    <div>
+                      <p class="hero__transcript-name">Inbound Support Call</p>
+                      <p class="hero__transcript-status">
+                        <span class="dot"></span> ACTIVE &bull; 02:44
+                      </p>
+                    </div>
+                  </div>
+                  <span class="pill pill--cyan">AI AGENT RESOLVING</span>
+                </div>
+                <hr class="divider" />
+                <div class="hero__transcript-log">
+                  <p>
+                    <strong class="u-cyan">AI Agent:</strong> "Hello! I found
+                    your order #4492 in the database. Yes, it shipped yesterday
+                    and will arrive by Thursday via FedEx."
+                  </p>
+                  <p>
+                    <strong class="u-light">Customer:</strong> "Perfect, thank
+                    you! Do I need to sign for it on delivery?"
+                  </p>
+                  <p>
+                    <strong class="u-cyan">AI Agent:</strong> "No signature is
+                    required for standard delivery on this item. It will be left
+                    at your front door."
+                  </p>
+                </div>
+              </div>
+
+              <div class="hero__waveform" aria-hidden="true">
+                <span style="height: 11%"></span
+                ><span style="height: 33%"></span
+                ><span style="height: 17%"></span>
+                <span style="height: 44%"></span
+                ><span style="height: 23%"></span
+                ><span style="height: 8%"></span>
+                <span style="height: 29%"></span
+                ><span style="height: 46%"></span
+                ><span style="height: 65%"></span>
+                <span style="height: 38%"></span
+                ><span style="height: 79%"></span
+                ><span style="height: 56%"></span>
+                <span style="height: 92%"></span
+                ><span style="height: 64%"></span
+                ><span style="height: 100%"></span>
+                <span style="height: 75%"></span
+                ><span style="height: 46%"></span
+                ><span style="height: 27%"></span>
+                <span style="height: 15%"></span
+                ><span style="height: 6%"></span>
+              </div>
+            </div>
+          </section>
+
+          <!-- HOW IT WORKS -->
+          <section class="steps" id="how-it-works">
+            <p class="eyebrow">EASY DEPLOYMENT</p>
+            <h2>Set up in four simple steps</h2>
+
+            <div class="steps__track">
+              <div class="card card--step">
+                <div class="card__top">
+                  <span class="icon-circle">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path
+                        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                      />
+                      <path d="M14 2v6h6" />
+                    </svg>
+                  </span>
+                  <span class="card__number">01</span>
+                </div>
+                <h3 class="card__title">Upload Knowledge</h3>
+                <p class="card__text">
+                  Drag-and-drop support docs, internal FAQs, spreadsheets, or
+                  API guides instantly.
+                </p>
+              </div>
+
+              <div class="card card--step">
+                <div class="card__top">
+                  <span class="icon-circle">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path
+                        d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"
+                      />
+                      <path d="M1 14h6M9 8h6M17 16h6" />
+                    </svg>
+                  </span>
+                  <span class="card__number">02</span>
+                </div>
+                <h3 class="card__title">Configure AI Agent</h3>
+                <p class="card__text">
+                  Define your brand voice, operational tone, rules, and human
+                  escalation triggers.
+                </p>
+              </div>
+
+              <div class="card card--step">
+                <div class="card__top">
+                  <span class="icon-circle">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <path
+                        d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.5 2.9.6a2 2 0 0 1 1.8 2.1z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="card__number">03</span>
+                </div>
+                <h3 class="card__title">Customer Calls</h3>
+                <p class="card__text">
+                  Provision a number. Your custom agent answers 24/7.
+                </p>
+              </div>
+
+              <div class="card card--step">
+                <div class="card__top">
+                  <span class="icon-circle">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    >
+                      <circle cx="6" cy="6" r="3" />
+                      <circle cx="6" cy="18" r="3" />
+                      <path d="M6 9v6M20 6h-6a4 4 0 0 0-4 4v0" />
+                      <circle cx="20" cy="6" r="0" />
+                    </svg>
+                  </span>
+                  <span class="card__number">04</span>
+                </div>
+                <h3 class="card__title">AI Resolves or Escalates</h3>
+                <p class="card__text">
+                  Calls get resolved natively. If blocked, the AI opens a
+                  structured ticket for humans.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- CINEMATIC PHOTO / QUOTE -->
+          <section class="quote">
+            <div class="quote__overlay">
+              <h2 class="quote__title">
+                &ldquo;Every customer deserves an answer.&rdquo;
+              </h2>
+              <p class="quote__text">
+                No busy tones. No holds. Just instant, human-grade conversations
+                any time of day or night.
+              </p>
+            </div>
+          </section>
+
+          <!-- FEATURES -->
+          <section class="features" id="features">
+            <p class="eyebrow u-center">PRODUCT FEATURES</p>
+            <h2 class="u-center">
+              AI handles the conversations.<br />Your team handles what matters.
+            </h2>
+
+            <div class="features__grid">
+              <div class="card card--feature">
+                <span class="icon-circle"
+                  ><svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 7v5l3 3" /></svg
+                ></span>
+                <h3 class="card__title">24/7 Voice Support</h3>
+                <p class="card__text">
+                  Instantly answer customer calls with absolute reliability,
+                  around the clock.
+                </p>
+              </div>
+              <div class="card card--feature">
+                <span class="icon-circle"
+                  ><svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <ellipse cx="12" cy="5" rx="8" ry="3" />
+                    <path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5" />
+                    <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" /></svg
+                ></span>
+                <h3 class="card__title">Knowledge Base / RAG</h3>
+                <p class="card__text">
+                  Synchronizes natively with your docs, FAQs, and APIs to give
+                  perfectly accurate answers.
+                </p>
+              </div>
+              <div class="card card--feature">
+                <span class="icon-circle"
+                  ><svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <path
+                      d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                    />
+                    <path d="M14 2v6h6M9 13h6M9 17h6" /></svg
+                ></span>
+                <h3 class="card__title">Support Tickets</h3>
+                <p class="card__text">
+                  Automatically drafts detailed structured tickets into your CRM
+                  for complex issues.
+                </p>
+              </div>
+              <div class="card card--feature">
+                <span class="icon-circle"
+                  ><svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <circle cx="9" cy="8" r="3.2" />
+                    <path d="M3.5 20c.8-3.4 3-5.2 5.5-5.2s4.7 1.8 5.5 5.2" />
+                    <path
+                      d="M16.5 6.5a3 3 0 0 1 0 5.8M19 20c-.5-2.2-1.6-3.7-3-4.6"
+                    /></svg
+                ></span>
+                <h3 class="card__title">Human Escalation</h3>
+                <p class="card__text">
+                  Live transfer to agent or clean handoff when advanced
+                  troubleshooting is required.
+                </p>
+              </div>
+              <div class="card card--feature">
+                <span class="icon-circle"
+                  ><svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <path d="M4 5h16M4 12h16M4 19h10" /></svg
+                ></span>
+                <h3 class="card__title">Call Transcripts</h3>
+                <p class="card__text">
+                  Provides clear AI generated summaries and deep transcription
+                  immediately post-call.
+                </p>
+              </div>
+              <div class="card card--feature">
+                <span class="icon-circle"
+                  ><svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 7v5l3 3M4 4l2 2" /></svg
+                ></span>
+                <h3 class="card__title">Conversation History</h3>
+                <p class="card__text">
+                  Explore full context timelines of historical customer touches
+                  to inform your staff.
+                </p>
+              </div>
+              <div class="card card--feature">
+                <span class="icon-circle"
+                  ><svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <circle cx="8" cy="8" r="3" />
+                    <path d="M2.5 19c.6-3 2.6-4.6 5.5-4.6s4.9 1.6 5.5 4.6" />
+                    <circle cx="17.5" cy="9" r="2.4" />
+                    <path d="M14.8 14.8c2 .3 3.3 1.6 3.9 4.2" /></svg
+                ></span>
+                <h3 class="card__title">Multiple Agents</h3>
+                <p class="card__text">
+                  Configure different personas and knowledge bases for separate
+                  departments easily.
+                </p>
+              </div>
+              <div class="card card--feature">
+                <span class="icon-circle"
+                  ><svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <path d="M4 20V10M11 20V4M18 20v-7" /></svg
+                ></span>
+                <h3 class="card__title">Deep Analytics</h3>
+                <p class="card__text">
+                  Monitor call volumes, resolution paths, sentiment analytics,
+                  and customer satisfaction.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- VIDEO SECTION -->
+          <section class="video">
+            <video
+              class="video__media"
+              poster="assets/video-section.jpg"
+              id="video"
+              autoplay
+              muted
+              loop
+              playsinline
+            >
+              <source src="assets/video-section.mp4" type="video/mp4" />
+            </video>
+            <div class="video__overlay">
+              <h2>Support doesn&rsquo;t sleep</h2>
+              <p>
+                Ensure continuous availability across timezones. Instantly
+                deployment with global scaling.
+              </p>
+            </div>
+            <div class="video__controls">
+              <span class="video__controls-left">
+                <button
+                  type="button"
+                  id="videoToggle"
+                  class="video__toggle"
+                  aria-label="Pause video"
+                  aria-pressed="true"
+                >
+                  <svg
+                    class="video__icon--pause"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="currentColor"
+                  >
+                    <rect x="1" y="1" width="3" height="10" />
+                    <rect x="8" y="1" width="3" height="10" />
+                  </svg>
+                  <svg
+                    class="video__icon--play"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="currentColor"
+                  >
+                    <path d="M2 1L11 6L2 11V1Z" />
+                  </svg>
+                </button>
+                AUTOPLAY &bull; MUTED
+              </span>
+              <span class="video__controls-right"
+                ><span class="dot"></span> LIVE LOOP</span
+              >
+            </div>
+          </section>
+
+          <!-- PRICING -->
+          <section class="pricing" id="pricing">
+            <p class="eyebrow u-center">FLEXIBLE RATES</p>
+            <h2 class="u-center">Pay only for what you use</h2>
+            <p class="pricing__subtitle">
+              Dynamic pay-as-you-go minutes. No locked-in monthly base fees,
+              scale up or down as call volumes change.
+            </p>
+
+            <div class="pricing__grid">
+              <div class="card card--price">
+                <p class="card__name">Starter</p>
+                <p class="card__amount">$1.99<span>/ min</span></p>
+                <p class="card__desc">
+                  Ideal for lean companies launching voice AI.
+                </p>
+                <hr class="divider" />
+                <ul class="card__features">
+                  <li>500 included minutes</li>
+                  <li>1 custom AI voice agent</li>
+                  <li>1 active knowledge base</li>
+                  <li>Email support</li>
+                </ul>
+                <a href="#contact" class="btn btn--outline">Choose Starter</a>
+              </div>
+
+              <div class="card card--price card--price-featured">
+                <span class="pill pill--cyan pricing__badge">MOST POPULAR</span>
+                <p class="card__name u-cyan">Business</p>
+                <p class="card__amount">$2.99<span>/ min</span></p>
+                <p class="card__desc">
+                  For scaling teams needing advanced analytics.
+                </p>
+                <hr class="divider" />
+                <ul class="card__features">
+                  <li>2,000 included minutes</li>
+                  <li>5 custom AI voice agents</li>
+                  <li>Unlimited knowledge bases</li>
+                  <li>Priority SLA support</li>
+                  <li>Real-time call analytics</li>
+                </ul>
+                <a href="#contact" class="btn btn--gradient btn--full"
+                  >Choose Business</a
+                >
+              </div>
+
+              <div class="card card--price">
+                <p class="card__name">Enterprise</p>
+                <p class="card__amount">Custom</p>
+                <p class="card__desc">High volumes with custom workflows.</p>
+                <hr class="divider" />
+                <ul class="card__features">
+                  <li>Unlimited dynamic minutes</li>
+                  <li>Unlimited custom agents</li>
+                  <li>Dedicated account manager</li>
+                  <li>Advanced custom integrations</li>
+                  <li>Custom SLA models</li>
+                </ul>
+                <a href="#contact" class="btn btn--outline">Contact Sales</a>
+              </div>
+            </div>
+          </section>
+
+          <!-- CONTACT -->
+          <section class="contact" id="contact">
+            <p class="eyebrow u-center">GET STARTED</p>
+            <h2 class="u-center">Request a Demo</h2>
+
+            <form
+              class="card card--form contact__form"
+              action="#"
+              method="post"
+            >
+              <div class="contact__row">
+                <div class="contact__field">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div class="contact__field">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="john@company.com"
+                  />
+                </div>
+              </div>
+              <div class="contact__row">
+                <div class="contact__field">
+                  <label for="company">Company</label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    placeholder="Acme Corp"
+                  />
+                </div>
+                <div class="contact__field">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+1 (555) 000-0000"
+                  />
+                </div>
+              </div>
+              <div class="contact__field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us about your support requirements..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn--gradient btn--full">
+                Request a Demo
+              </button>
+            </form>
+
+            <div class="table">
+              <div class="table__row table__row--head">
+                <span>Agent</span><span>Availability</span><span>Online</span>
+              </div>
+              <div class="table__row">
+                <span>AI Agent</span><span>24/7</span><span>On</span>
+              </div>
+              <div class="table__row">
+                <span>Technical Support</span><span>Until 18:00</span
+                ><span>On</span>
+              </div>
+              <div class="table__row">
+                <span>Billing Support</span><span>Until 13:00</span
+                ><span>Off</span>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <div class="footer__top">
+            <div class="logo">
+              <span class="logo__symbol">
+                <svg
+                  class="logo__svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="1" y="6" width="2" height="6" rx="1" fill="white" />
+                  <rect x="5" y="3" width="2" height="12" rx="1" fill="white" />
+                  <rect x="9" y="0" width="2" height="18" rx="1" fill="white" />
+                  <rect
+                    x="13"
+                    y="4"
+                    width="2"
+                    height="10"
+                    rx="1"
+                    fill="white"
+                  />
+                  <rect x="17" y="7" width="2" height="4" rx="1" fill="white" />
+                </svg>
+              </span>
+              <span class="logo__text">VoiceDesk AI</span>
+            </div>
+
+            <ul class="footer__links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+
+            <ul class="footer__social">
+              <li>
+                <a href="#" aria-label="Twitter"
+                  ><svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <path
+                      d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.6a4.1 4.1 0 0 0 1.3 5.5c-.6 0-1.3-.2-1.8-.5v.1c0 2 1.4 3.6 3.3 4a4.1 4.1 0 0 1-1.9.1 4.1 4.1 0 0 0 3.8 2.8A8.2 8.2 0 0 1 2 18.4a11.6 11.6 0 0 0 6.3 1.9c7.5 0 11.7-6.4 11.7-11.9v-.5c.8-.6 1.5-1.3 2-2.1z"
+                    /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="GitHub"
+                  ><svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <path
+                      d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.4 0C6.3 1.9 5.2 2.2 5.2 2.2a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 3.8 8.6c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"
+                    /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="LinkedIn"
+                  ><svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                    <path d="M10 21v-7a3 3 0 0 1 6 0v7M10 21V9" /></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="divider footer__divider" />
+
+          <div class="footer__bottom">
+            <p>&copy; 2026 VoiceDesk AI. All rights reserved.</p>
+            <p>Designed for high-growth operations.</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
