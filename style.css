@@ -983,21 +983,15 @@ section {
   .container {
     padding: 0 80px;
   }
-}
 
-@media (min-width: 900px) {
   section {
     padding: 120px 0;
   }
-}
 
-@media (min-width: 900px) {
   .header__nav {
     padding: 16px 0;
   }
-}
 
-@media (min-width: 900px) {
   .header__links {
     display: flex;
     align-items: center;
@@ -1009,28 +1003,20 @@ section {
   .header__links a:hover {
     color: var(--text);
   }
-}
 
-@media (min-width: 900px) {
   .header__cta {
     padding: 16px 32px;
     font-size: 16px;
   }
-}
 
-@media (min-width: 900px) {
   .logo__text {
     font-size: 20px;
   }
-}
 
-@media (min-width: 900px) {
   .icon-btn.header__burger, .nav-mobile {
     display: none;
   }
-}
 
-@media (min-width: 900px) {
   .hero {
     padding: 184px 0 80px;
     gap: 64px;
@@ -1061,9 +1047,7 @@ section {
     flex: 1;
     height: auto;
   }
-}
 
-@media (min-width: 900px) {
   .steps h2 {
     font-size: 42px;
   }
@@ -1073,9 +1057,7 @@ section {
   .steps__track .card {
     flex: 1;
   }
-}
 
-@media (min-width: 900px) {
   .quote {
     min-height: 480px;
   }
@@ -1085,18 +1067,14 @@ section {
   .quote__text {
     font-size: 16px;
   }
-}
 
-@media (min-width: 900px) {
   .features h2 {
     font-size: 42px;
   }
   .features__grid .card {
     flex: 1 1 calc(25% - 12px);
   }
-}
 
-@media (min-width: 900px) {
   .video {
     min-height: 400px;
   }
@@ -1107,9 +1085,7 @@ section {
     padding: 24px 32px;
     font-size: 12px;
   }
-}
 
-@media (min-width: 900px) {
   .pricing h2 {
     font-size: 42px;
   }
@@ -1123,9 +1099,7 @@ section {
   .card--price-featured {
     transform: translateY(-8px);
   }
-}
 
-@media (min-width: 900px) {
   .contact h2 {
     font-size: 42px;
   }
@@ -1141,9 +1115,7 @@ section {
     max-width: 640px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: 900px) {
   .footer {
     align-items: stretch;
     text-align: left;
